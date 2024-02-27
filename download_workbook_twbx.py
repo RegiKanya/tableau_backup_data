@@ -7,11 +7,12 @@ from google.cloud.storage import Client, transfer_manager
 
 input_location = os.path.dirname(sys.argv[0])
 // change your local path
-output_location = '/Users/regina.kanya/Documents/workbooks/'
+output_location = ''
 current_date = date.today().strftime("%Y-%m-%d")
 local_path = os.path.join(output_location, f'{current_date}/')
 remote_path = f'{current_date}/'
-folder_name = 'acasus-tableau-backup'
+// add you GCP storage bucket name
+folder_name = ''
 
 config = configparser.ConfigParser()
 config.read(input_location + '/tableau_in_cloud.ini')
