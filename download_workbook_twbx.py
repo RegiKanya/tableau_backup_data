@@ -6,6 +6,7 @@ import tableauserverclient as TSC
 from google.cloud.storage import Client, transfer_manager
 
 input_location = os.path.dirname(sys.argv[0])
+// change your local path
 output_location = '/Users/regina.kanya/Documents/workbooks/'
 current_date = date.today().strftime("%Y-%m-%d")
 local_path = os.path.join(output_location, f'{current_date}/')
